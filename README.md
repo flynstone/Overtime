@@ -33,8 +33,8 @@ Initial database structure
 ```
 
 <details>
-	<summary>View Diagram</summary>
-
-	!['database diagram'](./img/InitialEmployees.png)
+  <summary>View Diagram</summary>
+	
+  !['screenshot description'](./img/InitialEmployees.png)
 </details>
 
