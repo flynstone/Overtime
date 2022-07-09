@@ -121,7 +121,7 @@ namespace Infrastructure.Data
                     {
                         new Employee
                         {
-                            EmployeeId = 970,
+                            Id = 970,
                             FirstName = "John",
                             LastName = "Doe",
                             PhoneNumber = "641-672-1004",
@@ -131,7 +131,7 @@ namespace Infrastructure.Data
                         },
                         new Employee
                         {
-                            EmployeeId = 982,
+                            Id = 982,
                             FirstName = "Bob",
                             LastName = "Elias",
                             PhoneNumber = "239-472-4321",
@@ -141,7 +141,7 @@ namespace Infrastructure.Data
                         },
                         new Employee
                         {
-                            EmployeeId = 1014,
+                            Id = 1014,
                             FirstName = "Jamie",
                             LastName = "Laurence",
                             PhoneNumber = "412-958-8612",
@@ -151,7 +151,7 @@ namespace Infrastructure.Data
                         },
                         new Employee
                         {
-                            EmployeeId = 1071,
+                            Id = 1071,
                             FirstName = "Darius",
                             LastName = "Jameson",
                             PhoneNumber = "262-938-7044",
@@ -161,7 +161,7 @@ namespace Infrastructure.Data
                         },
                         new Employee
                         {
-                            EmployeeId = 1128,
+                            Id = 1128,
                             FirstName = "Ronald",
                             LastName = "Alan",
                             PhoneNumber = "304-532-9035",
@@ -171,7 +171,7 @@ namespace Infrastructure.Data
                         },
                         new Employee
                         {
-                            EmployeeId = 1177,
+                            Id = 1177,
                             FirstName = "Dominic",
                             LastName = "Barnaby",
                             PhoneNumber = "518-241-4132",
@@ -181,7 +181,7 @@ namespace Infrastructure.Data
                         },
                         new Employee
                         {
-                            EmployeeId = 1203,
+                            Id = 1203,
                             FirstName = "Brad",
                             LastName = "Shelly",
                             PhoneNumber = "786-359-1095",

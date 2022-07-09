@@ -34,13 +34,9 @@ namespace Infrastructure.Data.Migrations
             modelBuilder.Entity("Core.Models.Employee", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("CrewId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("EmployeeId")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("FirstName")

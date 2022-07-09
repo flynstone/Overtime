@@ -20,6 +20,10 @@ namespace Infrastructure.Data
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+
+            modelBuilder.Entity<Employee>()
+                .Property(e => e.Id)
+                .ValueGeneratedNever();
         }
     }
 }

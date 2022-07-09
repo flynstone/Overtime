@@ -4,9 +4,6 @@ namespace Core.Models
 {
     public class Employee : BaseEntity
     {
-        [Required]
-        public int EmployeeId { get; set; }
-
         [MaxLength(50)]
         public string FirstName { get; set; }
 

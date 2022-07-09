@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20220708150947_InitialDbCreate")]
+    [Migration("20220709163441_InitialDbCreate")]
     partial class InitialDbCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -36,13 +36,9 @@ namespace Infrastructure.Data.Migrations
             modelBuilder.Entity("Core.Models.Employee", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("CrewId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("EmployeeId")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("FirstName")
