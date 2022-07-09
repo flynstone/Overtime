@@ -1,0 +1,22 @@
+﻿[
+  {
+    "Id": 1,
+    "Name": "Lead Hand"
+  },
+  {
+    "Id": 2,
+    "Name": "Spell Hand"
+  },
+  {
+    "Id": 3,
+    "Name": "First Helper"
+  },
+  {
+    "Id": 4,
+    "Name": "Second Helper"
+  },
+  {
+    "Id": 5,
+    "Name": "Operator"
+  }
+]

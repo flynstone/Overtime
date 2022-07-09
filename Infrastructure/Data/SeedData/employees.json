@@ -1,0 +1,72 @@
+﻿[
+  {
+    "Id": 1,
+    "EmployeeId": 970,
+    "FirstName": "John",
+    "LastName": "Doe",
+    "PhoneNumber": "641-672-1004",
+    "CrewId": 1,
+    "JobTitleId": 1,
+    "RuleTypeId": 1
+  },
+  {
+    "Id": 2,
+    "EmployeeId": 982,
+    "FirstName": "Bob",
+    "LastName": "Elias",
+    "PhoneNumber": "239-472-4321",
+    "CrewId": 2,
+    "JobTitleId": 3,
+    "RuleTypeId": 1
+  },
+  {
+    "Id": 3,
+    "EmployeeId": 1014,
+    "FirstName": "Jamie",
+    "LastName": "Laurence",
+    "PhoneNumber": "412-958-8612",
+    "CrewId": 3,
+    "JobTitleId": 2,
+    "RuleTypeId": 2
+  },
+  {
+    "Id": 4,
+    "EmployeeId": 1071,
+    "FirstName": "Darius",
+    "LastName": "Jameson",
+    "PhoneNumber": "262-938-7044",
+    "CrewId": 4,
+    "JobTitleId": 1,
+    "RuleTypeId": 1
+  },
+  {
+    "Id": 5,
+    "EmployeeId": 1128,
+    "FirstName": "Ronald",
+    "LastName": "Alan",
+    "PhoneNumber": "304-532-9035",
+    "CrewId": 1,
+    "JobTitleId": 4,
+    "RuleTypeId": 1
+  },
+  {
+    "Id": 6,
+    "EmployeeId": 1177,
+    "FirstName": "Dominic",
+    "LastName": "Barnaby",
+    "PhoneNumber": "518-241-4132",
+    "CrewId": 2,
+    "JobTitleId": 5,
+    "RuleTypeId": 1
+  },
+  {
+    "Id": 7,
+    "EmployeeId": 1203,
+    "FirstName": "Brad",
+    "LastName": "Shelly",
+    "PhoneNumber": "786-359-1095",
+    "CrewId": 3,
+    "JobTitleId": 3,
+    "RuleTypeId": 1
+  }
+]

@@ -1,0 +1,30 @@
+﻿[
+  {
+    "Id": 1,
+    "Name": "Available"
+  },
+  {
+    "Id": 2,
+    "Name": "Vacation"
+  },
+  {
+    "Id": 3,
+    "Name": "Training"
+  },
+  {
+    "Id": 4,
+    "Name": "WI"
+  },
+  {
+    "Id": 5,
+    "Name": "Modified Work"
+  },
+  {
+    "Id": 6,
+    "Name": "Parental"
+  }
+  {
+    "Id": 7,
+    "Name": "Other"
+  }
+]
