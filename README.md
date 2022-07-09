@@ -35,6 +35,6 @@ Initial database structure
 <details>
   <summary>View Diagram</summary>
 
-  !['screenshot description'](./img/InitialEmployees.png)
+  !['screenshot description'](./img/InitialEmployeesDb.png)
 </details>
 
