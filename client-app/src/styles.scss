@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@400;500;700&display=swap');
+
+@import './assets/scss/themes.scss';
+
+html, body { height: 100%; }
+body { 
+  margin: 0; 
+  font-family: 'Grandstander' !important; 
+}
+
+h1 {
+  font-family: 'Grandstander' !important;
+}

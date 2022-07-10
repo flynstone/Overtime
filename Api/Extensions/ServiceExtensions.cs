@@ -12,6 +12,14 @@ namespace Api.Extensions
     {
         public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration config)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy", builder =>
+                builder.AllowAnyMethod()
+                       .AllowAnyHeader()
+                       .WithOrigins("https://localhost:4200"));
+            });
+
             services.AddControllers();
             // This line must be after the AddControllers.
             // This configures the api error responses.
@@ -32,10 +40,11 @@ namespace Api.Extensions
                     return new BadRequestObjectResult(errorResponse);
                 };
             });
-
+            // Automapper and repository scopes.
+            services.AddAutoMapper(typeof(MappingProfiles).Assembly);
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-            services.AddAutoMapper(typeof(MappingProfiles).Assembly);
+            // Database configuration.
             services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlite(config.GetConnectionString("DefaultConnection")));
 
