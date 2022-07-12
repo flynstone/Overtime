@@ -1,5 +1,6 @@
 ﻿using Api.DataTransferObjects;
 using Api.Errors;
+using Api.Helpers;
 using AutoMapper;
 using Core.Interfaces;
 using Core.Models;
@@ -19,14 +20,20 @@ namespace Api.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IReadOnlyList<EmployeeToReturnDto>>> GetEmployees()
+        public async Task<ActionResult<Pagination<EmployeeToReturnDto>>> GetEmployees([FromQuery]EmployeeSpecParams employeeParams)
         {
             // Get list specifications.
-            var spec = new EmployeesWithSpecifications();
+            var spec = new EmployeesWithSpecifications(employeeParams);
+
+            // Count employees.
+            var countSpec = new EmployeeWithFiltersForCountSpecification(employeeParams);
+            var totalItems = await _unitOfWork.Repository<Employee>().CountAsync(countSpec);
 
             var employees = await _unitOfWork.Repository<Employee>().ListAsync(spec);
 
-            return Ok(_mapper.Map<IReadOnlyList<Employee>, IReadOnlyList<EmployeeToReturnDto>>(employees));
+            var data = _mapper.Map<IReadOnlyList<Employee>, IReadOnlyList<EmployeeToReturnDto>>(employees);
+
+            return Ok(new Pagination<EmployeeToReturnDto>(employeeParams.PageIndex, employeeParams.PageSize, totalItems, data));
         }
 
         [HttpGet("{id}")]

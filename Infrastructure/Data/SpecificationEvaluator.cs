@@ -10,9 +10,27 @@ namespace Infrastructure.Data
         {
             var query = inputQuery;
 
+            // Returns query with a criteria, ex: with specific crew or job title...
             if (spec.Criteria != null)
             {
                 query = query.Where(spec.Criteria);
+            }
+
+            // Order list.
+            if (spec.OrderBy != null)
+            {
+                query = query.OrderBy(spec.OrderBy);
+            }
+
+            if (spec.OrderByDescending != null)
+            {
+                query = query.OrderByDescending(spec.OrderByDescending);
+            }
+
+            // Add pagination.
+            if (spec.IsPagingEnabled)
+            {
+                query = query.Skip(spec.Skip).Take(spec.Take);
             }
 
             query = spec.Includes.Aggregate(query, (current, include) => current.Include(include));

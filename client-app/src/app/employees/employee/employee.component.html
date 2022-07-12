@@ -1,0 +1,40 @@
+<h1 *ngIf="isAddMode">Add Employee</h1>
+<h1 *ngIf="!isAddMode">Edit Employee</h1>
+<form [formGroup]="form">
+  <mat-form-field appearance="outline">
+    <mat-label>id</mat-label>
+    <input matInput name="id" formControlName="id">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>first Name</mat-label>
+    <input matInput name="firstName" formControlName="firstName">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Last Name</mat-label>
+    <input matInput name="lastName" formControlName="lastName">
+
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Phone Number</mat-label>
+    <input matInput name="phoneNumber" formControlName="phoneNumber">
+
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Crew</mat-label>
+    <input matInput name="crew" formControlName="crew">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Job Title</mat-label>
+    <input matInput name="jobTitle" formControlName="jobTitle">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Rule</mat-label>
+    <input matInput name="ruleType" formControlName="ruleType">
+  </mat-form-field>
+</form>

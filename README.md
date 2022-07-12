@@ -38,4 +38,9 @@ Initial database structure
   !['screenshot description'](./img/InitialEmployeesDb.png)
 </details>
 
+```
+Adding properties to the Employee class
+```
+
+
 

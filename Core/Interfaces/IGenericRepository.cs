@@ -12,5 +12,8 @@ namespace Core.Interfaces
         void Add(T entity);
         void Update(T entity);
         void Delete(T entity);
+
+        // Needed for paging, sorting and filtering.
+        Task<int> CountAsync(ISpecification<T> spec);
     }
 }
