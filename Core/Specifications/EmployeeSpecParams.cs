@@ -15,10 +15,10 @@
         public int? CrewId { get; set; }
         public int? JobTitleId { get; set; }
         public int? RuleTypeId { get; set; }
-        public string Sort { get; set; }
+        public string? Sort { get; set; }
 
         private string _search { get; set; }
-        public string Search 
+        public string? Search 
         {
             get => _search;
             set => _search = value.ToLower();

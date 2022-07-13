@@ -5,6 +5,7 @@ namespace Core.Specifications
     public class EmployeesWithSpecifications : BaseSpecification<Employee>
     {
         public EmployeesWithSpecifications(EmployeeSpecParams employeeParams) : base(x => 
+            (string.IsNullOrEmpty(employeeParams.Search) || x.FirstName.ToLower().Contains(employeeParams.Search)) && 
             (!employeeParams.CrewId.HasValue || x.CrewId == employeeParams.CrewId) &&
             (!employeeParams.JobTitleId.HasValue || x.JobTitleId == employeeParams.JobTitleId) &&
             (!employeeParams.RuleTypeId.HasValue || x.RuleTypeId == employeeParams.RuleTypeId))
